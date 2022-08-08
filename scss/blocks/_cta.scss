@@ -1,0 +1,112 @@
+.cta {
+    background-color: rgba(73, 85, 103, 1);
+    position: relative;
+    background-image: url("../img/cta.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      
+      .cta {
+        background-image: url("../img/cta@2x.jpg");
+      }
+    }
+.cta__container {
+    padding: 102px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.cta__title {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+    width: 415px;
+}
+.cta__list {
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+}
+.cta__item {
+    margin-right: 18px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.cta__list-img {
+    width: 182px;
+    height: 56px;
+}
+@media only screen and (max-width: $tablet) {
+    .cta {
+        background-image: url("../img/cta-tablet.jpg");
+        background-size: cover;
+    }
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      
+      .cta {
+        background-image: url("../img/cta-tablet@2x.jpg");
+      }
+    }
+    .cta__container {
+        padding-top: 62px;
+        padding-bottom: 62px;
+       flex-direction: column;
+       justify-content: center;
+    }
+    .cta__list {
+        margin: 0;
+        margin-top: 40px;
+    }
+    .cta__title {
+        text-align: center;
+    }
+    .cta__list-img {
+        width: 113px;
+        height: 40px;
+    }
+}
+@media only screen and (max-width: $mobile) {
+    .cta {
+        background-image: url("../img/cta-mobile.jpg");
+    }
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      
+      .cta {
+        background-image: url("../img/cta-mobile@2x.jpg");
+      }
+    }
+    .cta__container {
+        padding-top: 88px;
+        padding-bottom: 88px;
+    }
+    .cta__title {
+        width: 311px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+}

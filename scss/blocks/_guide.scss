@@ -1,0 +1,124 @@
+.guide {
+    padding-top: 160px;
+    padding-bottom: 140px;
+    position: relative;
+    max-width: 1440px;
+}
+.guide__list {
+    @include list-steyle;
+    display: flex;
+    justify-content: space-between;
+    
+    &::after {
+        background-color: #E5ECF4;
+        display: block;
+        height: 15px;
+        width: 68%;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 198px;
+        left: 0;
+    }
+}
+.guide__item {
+    width: 350px;
+    padding-top: 136px;
+    position: relative;
+    
+    &::before {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background-color: rgba(252, 183, 43, 1);
+        content: "";
+        display: block;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.guide__item--app {
+    &::before {
+        background-image: url("../img/guide1.svg");
+    }
+}
+.guide__item--scooter {
+    &::before {
+        background-image: url("../img/guide2.svg");
+    }
+}
+.guide__item--ride {
+    &::before {
+        background-image: url("../img/guide3.svg");
+    }
+}
+.guide__item-title {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    margin-bottom: 27px;
+}
+.guide__item-text {
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+@media only screen and (max-width: $tablet) {
+    .guide {
+        padding-top: 122px;
+        padding-bottom: 92px;
+    }
+    .guide__list {
+        flex-direction: column;
+        justify-content: center;
+        align-content: start;
+        padding: 0 58px;
+        &::after {
+            width: 15px;
+            height: 512px;
+            top: 0;
+            left: calc(50% - 248px);
+        }
+    }
+    .guide__item {
+        padding: 0;
+        margin: 0;
+        width: 573px;
+        margin: 0 auto 40px auto;
+        padding-left: 175px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+@media only screen and (max-width: $mobile) {
+    .guide__list {
+        text-align: center;
+        padding: 0;
+        &::after {
+            display: none;
+        }
+    }
+    .guide {
+        padding-top: 120px;
+        padding-bottom: 83px;
+    }
+    .guide__item {
+        padding: 0;
+        margin-bottom: 48px;
+        width: 311px;
+        padding-top: 120px;
+        background-position: center top;
+        &::before {
+            left: calc(50% - 48px);
+        }
+    }
+}
+

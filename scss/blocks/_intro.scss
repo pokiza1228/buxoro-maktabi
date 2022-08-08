@@ -1,0 +1,120 @@
+.intro {
+    padding: 153px 0;
+    background-image: url("../img/fon.jpg");
+    background-size: cover;
+    max-width: 1440px;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.intro__container {
+    position: relative;
+}
+.intro__title {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+    width: 500px;
+}
+.intro-wrapper {
+    padding-left: 95px;
+    width: 500px;
+    display: block;
+}
+.intro__text {
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 40px 0;
+    display: flex;
+    &::after {
+        background-image: url("../img/intro-chiziq.svg");
+        background-repeat: no-repeat;
+        content: "";
+        height: 15px;
+        width: 202px;
+        display: block;
+        position: absolute;
+        left: -161px;
+        top: 200px;
+    }
+    &::before {
+        background-image: url("../img/intro-strelka.svg");
+        background-repeat: no-repeat;
+        content: "";
+        height: 150px;
+        width: 450px;
+        display: block;
+        position: absolute;
+        left: 650px;
+        top: 200px;
+    }
+}
+.intro__link {
+    &:hover {
+        background-color: transparent;
+    }
+}
+@media only screen and (max-width: $tablet){
+    .intro {
+        padding-top: 137px;
+        padding-bottom: 217px;
+        // background-image: url("../img/intro-tablet.jpg");
+       
+    }
+    .intro-wrapper {
+        text-align: center;
+        padding: 0;
+        width: 573px;
+        margin: 0 auto;
+    }
+    .intro__title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .intro__text {
+        margin: 24px 0 32px 0;
+        &::after {
+            display: none;
+        }
+        &::before {
+            left: 0px;
+            top: 350px;
+        }
+    }
+    .intro__link {
+    margin: 0 auto;
+    }
+}
+@media only screen and (max-width: $mobile) {
+    .intro {
+        padding-top: 115px;
+        padding-bottom: 179px;
+        // background-image: url("../img/intro-mobile.jpg");
+       
+    }
+
+    .intro__title {
+        font-size: 40px;
+        line-height: 40px;
+        width: 311px;
+    }
+    .intro-wrapper {
+         width: 311px;
+    }
+    .intro__text {
+       
+        &::before {
+            left: -280px;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.about-intro {
+    background-image: url("../img/about-intro.jpg");
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    height: 200px;
+    margin: 0 auto;
+    background-position: center center;
+    background-size: cover;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .about-intro {
+    background-image: url("../img/about-intro2x.jpg");
+  }
+}
+.about-intro__tittle {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+    padding: 72px 0;
+    margin: 0;
+}
+@media only screen and (max-width: $tablet) {
+  .about-intro {
+    background-image: url("../img/about-intro-tablet.jpg");
+  }
+  @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .about-intro {
+    background-image: url("../img/about-intro-tablet@2x.jpg");
+  }
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .about-intro {
+    background-image: url("../img/about-intro-mobile.jpg");
+  }
+  @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .about-intro {
+    background-image: url("../img/about-intro-mobile@2x.jpg");
+  }
+  }
+  .about-intro__tittle {
+    padding: 60px 0;
+    text-align: center;
+  }
+}

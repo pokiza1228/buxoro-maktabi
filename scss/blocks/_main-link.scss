@@ -1,0 +1,12 @@
+.main-link {
+    min-width: 180px;
+    color: #FFFFFF;
+    padding: 11px 36px;
+    background-color: rgba(252, 183, 43, 1);
+    display: inline-block;
+    border: 3px solid #FCB72B;
+    &:hover {
+        background-color: transparent;
+        color: #FCB72B;
+    }
+}

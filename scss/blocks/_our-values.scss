@@ -1,0 +1,104 @@
+.our-values {
+    padding-top: 78px;
+    padding-bottom: 120px;
+}
+.our-values__title {
+    text-align: center;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+.our-values__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 100px;
+}
+.our-values__item {
+    text-align: center;
+    width: 350px;
+    margin-right: 30px;
+    position: relative;
+    &:last-child {
+        margin-right: 0;
+    }
+    &::after {
+        content: "";
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background-color: rgba(252, 183, 43, 1);
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 192px;
+        left: calc(50% - 48px);
+    }
+}
+.our-values__item--tech {
+    &::after {
+        background-image: url("../img/01.svg");
+    }
+}
+.our-values__item--integrity {
+    &::after {
+        background-image: url("../img/02.svg");
+    }
+}
+.our-values__item--community {
+    &::after {
+        background-image: url("../img/03.svg");
+    }
+}
+.our-values__img {
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.our-values__wraper {
+}
+.our-values__item-title {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    margin-bottom: 27px;
+    margin-top: 80px;
+}
+.our-values__item-text {
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+@media only screen and (max-width: $tablet) {
+    .our-values {
+        padding-top: 120px;
+    }
+    .our-values__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .our-values__item {
+        width: 457px;
+        margin-right: 0;
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+@media only screen and (max-width: $mobile) {
+    .our-values {
+        padding-bottom: 145px;
+    }
+    .our-values__item {
+        width: 311px;
+    }
+}
