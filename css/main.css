@@ -573,10 +573,6 @@ a {
   .header__link {
     display: none;
   }
-  .header__title {
-    width: 100%;
-    text-align: end;
-  }
   .our-values__title {
     font-size: 16px;
   }
