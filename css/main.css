@@ -573,8 +573,9 @@ a {
   .header__link {
     display: none;
   }
-  .header__logo {
-    margin: 0 auto;
+  .header__title {
+    width: 100%;
+    text-align: end;
   }
 }
 
