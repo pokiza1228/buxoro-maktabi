@@ -58,8 +58,6 @@
     border-radius: 50%;
     margin: 0 auto;
 }
-.our-values__wraper {
-}
 .our-values__item-title {
     font-family: "Space Mono";
     font-style: normal;
@@ -95,7 +93,7 @@
 }
 @media only screen and (max-width: $mobile) {
     .our-values {
-        padding-bottom: 145px;
+        padding-bottom: 20px;
     }
     .our-values__item {
         width: 311px;

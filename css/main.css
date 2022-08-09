@@ -1273,7 +1273,7 @@ a {
 
 @media only screen and (max-width: 767px) {
   .our-values {
-    padding-bottom: 145px;
+    padding-bottom: 20px;
   }
   .our-values__item {
     width: 311px;
