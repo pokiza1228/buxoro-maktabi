@@ -1,1 +1,1 @@
-# imtixon-2
+# Buxoro maktabi
