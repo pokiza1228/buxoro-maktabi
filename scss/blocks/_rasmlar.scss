@@ -1,0 +1,13 @@
+.rasmlar {
+    padding: 50px;
+}
+.rasmlar__item img {
+    margin: 0 auto;
+}
+.rasmlar__item {
+    margin-bottom: 30px;
+}
+.rasmlar__list {
+    @include list-steyle;
+
+}

@@ -1163,7 +1163,6 @@ a {
 }
 
 .our-values {
-  padding-top: 78px;
   padding-bottom: 120px;
 }
 
@@ -1634,5 +1633,23 @@ a {
   .footer__nav-item:last-child {
     margin-bottom: 0;
   }
+}
+
+.rasmlar {
+  padding: 50px;
+}
+
+.rasmlar__item img {
+  margin: 0 auto;
+}
+
+.rasmlar__item {
+  margin-bottom: 30px;
+}
+
+.rasmlar__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */
