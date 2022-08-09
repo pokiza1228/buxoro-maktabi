@@ -1250,7 +1250,7 @@ a {
 
 @media only screen and (max-width: 1119px) {
   .our-values {
-    padding-top: 120px;
+    padding-top: 30px;
   }
   .our-values__list {
     -webkit-box-orient: vertical;
@@ -1273,7 +1273,7 @@ a {
 
 @media only screen and (max-width: 767px) {
   .our-values {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
   .our-values__item {
     width: 311px;
